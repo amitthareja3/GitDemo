@@ -28,7 +28,7 @@ open the browser with the Mortgage payment url
     Create Webdriver    Chrome  executable_path=/Users/rahulshetty/Documents/chromedriver
     Go To   https://rahulshettyacademy.com/loginpagePractise/
 
-Fill the login Form
+Fill gthe login Form
     [arguments]     ${username}     ${password}
     Input Text          id:username     ${username}
     Input Password      id:password     ${password}
@@ -43,7 +43,7 @@ verify error message is correct
    Element Text Should Be       ${Error_Message_Login}      Incorrect username/password.
 
 
-verify error message is correct
+verify error message is correct1
    ${result}=   Get Text    ${Error_Message_Login}
    Should Be Equal As Strings     ${result}     Incorrect username/password.
    Element Text Should Be       ${Error_Message_Login}      Incorrect username/password.
