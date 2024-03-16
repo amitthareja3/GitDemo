@@ -43,6 +43,11 @@ verify error message is correct
    Element Text Should Be       ${Error_Message_Login}      Incorrect username/password.
 
 
+verify error message is correct
+   ${result}=   Get Text    ${Error_Message_Login}
+   Should Be Equal As Strings     ${result}     Incorrect username/password.
+   Element Text Should Be       ${Error_Message_Login}      Incorrect username/password.
+
 
 
 #  ppaef
