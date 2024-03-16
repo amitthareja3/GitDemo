@@ -59,6 +59,7 @@ Verify Card titles in the Shop page
       Append To List    ${actualList}     ${element.text}
    END
    Lists Should Be Equal   ${expectedList}    ${actualList}
+#
 
 
 Select the Card
